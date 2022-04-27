@@ -1,4 +1,4 @@
-
+[![Build Status](https://dev.azure.com/robertgr2009/TechMentoring/_apis/build/status/robertgr2009.devops-project-samples?branchName=master)](https://dev.azure.com/robertgr2009/TechMentoring/_build/latest?definitionId=7&branchName=master)
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
