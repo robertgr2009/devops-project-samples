@@ -32,7 +32,8 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
-
+  
+  #teste
 - task: NuGetCommand@2
   inputs:
     command: 'restore'
