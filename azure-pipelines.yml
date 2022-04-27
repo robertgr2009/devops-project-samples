@@ -16,11 +16,20 @@ variables:
 
 steps:
 - task: NuGetToolInstaller@1
-
+<#
 - task: NuGetCommand@2
   inputs:
     restoreSolution: '$(solution)'
-
+#>
+  #teste
+- task: NuGetCommand@2
+  inputs:
+    command: 'restore'
+    feedsToUse: 'select'
+    vstsFeed: 'my-project/my-project-scoped-feed'
+    includeNuGetOrg: false
+    restoreSolution: '**/*.sln'
+    
 - task: VSBuild@1
   inputs:
     solution: '$(solution)'
@@ -33,11 +42,3 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
   
-  #teste
-- task: NuGetCommand@2
-  inputs:
-    command: 'restore'
-    feedsToUse: 'select'
-    vstsFeed: 'my-project/my-project-scoped-feed'
-    includeNuGetOrg: false
-    restoreSolution: '**/*.sln'
